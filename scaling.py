@@ -26,6 +26,6 @@ if __name__ == '__main__':
     print(f'results: {results[0]}')
     print(f'time consumption: {end_time - start_time}')
 
-    # ser.write(f'{results[0][1]},{results[0][0]}\n'.encode())
-    # ser.close()
+    ser.write(f'{results[0][1]},{results[0][0]}\n'.encode())
+    ser.close()
     

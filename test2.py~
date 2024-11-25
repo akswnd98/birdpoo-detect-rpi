@@ -1,0 +1,10 @@
+import time
+import serial
+
+
+if __name__ == '__main__':
+    ser = serial.Serial('/dev/ttyACM0', 115200)
+    time.sleep(2)
+    ser.write(b'10000,10000\n')
+    ser.close()
+    
